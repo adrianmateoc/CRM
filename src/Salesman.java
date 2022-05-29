@@ -1,4 +1,4 @@
-public class Salesman {
+public class Salesman extends Users{
     float salary;
     int id;
 
@@ -16,5 +16,20 @@ public class Salesman {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    void register() {
+
+    }
+
+    @Override
+    void login() {
+
+    }
+
+    @Override
+    void logout() {
+
     }
 }

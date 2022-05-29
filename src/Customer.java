@@ -1,9 +1,19 @@
-public class Customer {
+public class Customer extends Users{
 
     String billingAddress;
     int id;
     String shippingAddress;
     String DNI;
+
+    public Customer(String billingAddress, int id, String shippingAddress, String DNI) {
+        this.billingAddress = billingAddress;
+        this.id = id;
+        this.shippingAddress = shippingAddress;
+        this.DNI = DNI;
+    }
+
+    public Customer() {
+    }
 
     public String getBillingAddress() {
         return billingAddress;
@@ -37,4 +47,18 @@ public class Customer {
         this.DNI = DNI;
     }
 
+    @Override
+    void register() {
+
+    }
+
+    @Override
+    void login() {
+
+    }
+
+    @Override
+    void logout() {
+
+    }
 }
